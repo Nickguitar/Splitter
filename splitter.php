@@ -4,7 +4,7 @@
 function banner(){
 	echo "Splits a file into subfiles of defined size.
 
-	Usage: php splitter.php -i interval [-b] [-e] [-o] [-v] -f input_file
+	Usage: php splitter.php -i interval [-b begin] [-e end] [-v] -f input_file [-o] output_path
 	-i: size in bytes of the interval of the split
 	-b: the byte in which the split will beginning (default = 0)
 	-e: the byte in which the split will end (default = input_file's length)
