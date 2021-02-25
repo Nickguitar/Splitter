@@ -3,7 +3,7 @@ Splits a file into subfiles of defined size
 
 ## Wtf is this sh!t
 
-This is just a PHP version of an old method used to bypass anti virus signature based scans.
+This is just a PHP version of an old method (dSplit) used to bypass anti virus signature based scans.
 The main idea is to detect which offsets of the file are recognized by the AV software as malicious and patch them so that the AV cannot detect it anymore.
 
 For example, if you use a 100Kb executable, you'll generate subfiles with 10kb, 20kb, 30kb, etc., until 100kb, e.g, which is the original one.
