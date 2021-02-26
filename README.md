@@ -10,7 +10,7 @@ For example, if you use a 100Kb executable, you'll generate subfiles with 10kb, 
 With this files in hands, you can scan all of them with the AV and see which are detected.
 If your AV detects every file from 40kb, e.g., that means that the malicious signature is somewhere between 30kb and 40kb.
 Now you can split the original file, but only within region between 30kb and 40kb, and you can split with an interval of 1kb.
-You'll now generate 10 files, with  You can now scan them and see which are detected.
+You'll now generate 10 files that you can scan and see which are detected.
 Doing this recursivelly will lead you to the offsets that are recognized by the AV software as malicious.
 
 ## Usage
@@ -34,7 +34,7 @@ If 'malware.exe' is 70Kb, this will generate about 70 files in path/ with ~1Kb e
 
 `foo@bar:~$ php splitter.php -i 100 -f malware.exe -o path -e 4000`
 
-Remember malware.exe is 70Kb, but this time it will generate about 40 files, since we specified the end byte (4000) and the interval changed to 100.
+Remember that malware.exe is 70Kb, but this time it will generate about 40 files, since we specified the end byte (4000) and the interval changed to 100.
 
 `foo@bar:~$ php splitter.php -i 1 -f malware.exe -o path -b 6700 -e 6800`
 
