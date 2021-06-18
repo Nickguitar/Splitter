@@ -19,7 +19,7 @@ Doing this recursivelly will lead you to the offsets that are recognized by the 
 
 ```
 	-i: size in bytes of the interval of the split
-	-b: the byte in which the split will beginning (default = 0)
+	-b: the byte in which the split will begin (default = 0)
 	-e: the byte in which the split will end (default = input_file's length)
 	-f: the file that will be splitted
 	-o: the output path (default = current dir)
